@@ -1,5 +1,5 @@
 --[[
-  Configuration for mocking videoconference users.
+  Configuration for mocking calls.
 ]]
 
 _M = {
@@ -9,8 +9,8 @@ _M = {
   server = "[freeswitch_conference_server_ip]",
   -- Load testing extension on the server to be tested.
   extension = "load_test",
-  -- Full path to the video file to play for the tests, including format.
-  mock_video_file = "vlc:///usr/local/freeswitch/storage/sample-vid.mp4",
+  -- Full path to the audio file to play for the tests, including format.
+  mock_audio_file = "vlc:///usr/local/freeswitch/storage/sample-vid.mp4",
 }
 
 return _M
