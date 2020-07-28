@@ -7,7 +7,7 @@ _M = {
   gateway = "flowroute",
   -- Server domain of the server to be tested.
   server = "[freeswitch_server_ip]",
-  -- Full path to the audio file to play for the tests, including format.
+  -- Name of phrase macro to play into the call, set to nil to skip.
   mock_play_phrase = "screaming_monkeys",
 }
 
