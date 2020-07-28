@@ -3,14 +3,12 @@
 ]]
 
 _M = {
-  -- Name of the SIP gateway that registers with the server to be tested.
-  gateway = "test_harness",
+  -- Name of the gateway to use for outbound calls.
+  gateway = "flowroute",
   -- Server domain of the server to be tested.
-  server = "[freeswitch_conference_server_ip]",
-  -- Load testing extension on the server to be tested.
-  extension = "load_test",
+  server = "[freeswitch_server_ip]",
   -- Full path to the audio file to play for the tests, including format.
-  mock_audio_file = "vlc:///usr/local/freeswitch/storage/sample-vid.mp4",
+  mock_play_phrase = "screaming_monkeys",
 }
 
 return _M
