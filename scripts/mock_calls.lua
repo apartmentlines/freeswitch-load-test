@@ -70,7 +70,7 @@ function main()
     if action == "add" then
       debug_print(string.format("Adding mock user #%d", i))
       api:executeString(string.format("global_setvar %s_%s=", mock_state_variable_name, i))
-      api:executeString(string.format("luarun mock_call.lua %s %s %s %d %s %s", config.gateway, config.server, config.extension, i, mock_state_variable_name, config.mock_play_phrase))
+      api:executeString(string.format("luarun mock_call.lua %s %s %d %s %s", config.server, extension, i, mock_state_variable_name, config.mock_play_phrase))
     elseif action == "remove" then
       debug_print(string.format("Removing mock user #%d", i))
       api:executeString(string.format("global_setvar %s_%s=true", mock_state_variable_name, i))
